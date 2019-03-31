@@ -17,3 +17,12 @@ getsby new <project name>
 ## Components
 
 - Layout Component is a special component that is used in every page, but other components are just normal components
+
+## gatsby-config.js
+
+- We can see the array of all the plugins
+- The header can be changed in the siteMetadata
+
+## gatsby-node.js
+
+- Can be used to create pages programatically with NodeJS

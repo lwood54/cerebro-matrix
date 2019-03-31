@@ -3,12 +3,20 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Container, Row, Col } from "reactstrap"
 
 const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <Container>
+      <Row>
+        <Col sm="10" style={{ border: "2px solid black" }}>
+          hello world
+        </Col>
+        <Col style={{ border: "2px solid black" }}>hi there world!</Col>
+      </Row>
+    </Container>
+
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
