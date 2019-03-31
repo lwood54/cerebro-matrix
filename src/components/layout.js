@@ -6,13 +6,25 @@
  */
 
 import React from "react"
+import { Link } from "gatsby"
+import Section from "../components/section/section"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+// CSS OPTIONS
 // import "./layout.css"
 // import "../sass/layout.scss"
-import "bootstrap/dist/css/bootstrap.min.css"
+// import { createGlobalStyle } from "styled-components"
+// const GlobalStyle = createGlobalStyle`
+//   * {
+//     margin: 0;
+//     padding: 0;
+//   }
+//   body {
+//     background: blue;
+//   }
+// `
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,6 +40,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Section />
         <div
           style={{
             margin: `0 auto`,
@@ -38,9 +51,10 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            © {new Date().getFullYear()}, Made By Logan Wood
+            <Link to="/" style={{ marginLeft: "5px" }}>
+              Home
+            </Link>
           </footer>
         </div>
       </>
