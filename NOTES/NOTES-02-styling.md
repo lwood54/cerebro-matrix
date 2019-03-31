@@ -31,3 +31,10 @@ We can do styling with
 1. install bootstrap using npm or download from bootstrap
 2. I'm doing: npm install bootstrap
 3. open the layout.js file and: import 'bootstrap/dist/css/bootstrap.min.css';
+
+## Reactstrap
+
+1. I also installed Reactstrap so that I could use bootstrap components with react
+2. npm install reactstrap
+3. in the file the components are needed:
+   - import {Container, Col, Row} from 'reactstrap' (or whatever components are needed)
