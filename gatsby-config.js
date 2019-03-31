@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Cerebro-Matrix`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `A futurisctic store to purchase cerebral packages for download, as in the Matrix.`,
+    author: `Logan Wood`,
+    company: `A&E Mindshare`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
