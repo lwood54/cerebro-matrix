@@ -10,7 +10,9 @@ const productTemplate = ({ data }) => {
         const { description } = data.contentfulProduct.description
         return (
                 <Layout>
-                        <h1>Single Product Template</h1>
+                        <h1 style={{ color: "teal" }}>
+                                Single Product Template
+                        </h1>
                         <div style={{ maxWidth: "650px", margin: "atuo" }}>
                                 <Img fluid={image.fluid} />
                         </div>
