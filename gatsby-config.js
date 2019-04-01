@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
         siteMetadata: {
-                title: `Cerebro-Matrix`,
+                title: `Gatsby-Explore`,
                 description: `A futurisctic store to purchase cerebral packages for download, as in the Matrix.`,
                 author: `Logan Wood`,
                 company: `A&E Mindshare`,

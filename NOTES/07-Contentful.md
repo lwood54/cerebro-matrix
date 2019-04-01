@@ -38,3 +38,33 @@ require('dotenv').config({
 7. For development, create a .env.development file in the root directory.
       - We will setup our production differently, like with Netflify build variables
 8. update the .gitignore file to include this newly created file
+9. Now when we reload the server and access the GraphiQL page, then we can see new paths to access Contentful data
+10. We can do a GraphiQL search to confirm access:
+
+```
+{
+  allContentfulProduct {
+    edges {
+      node {
+        id
+        title
+        description {
+          description
+        }
+        price
+        image {
+          fixed(width: 300) {
+            src
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+11. We will have to add in the options for adjusting SVG, as before
+12. Now we can access the data use the PageQuery method, as before.
+
+- This is where we export const query = graphql`<query string above>`
+- Then we can access the data via props.data and destructuring.

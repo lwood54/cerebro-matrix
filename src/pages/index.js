@@ -18,6 +18,9 @@ const IndexPage = () => (
                         title="Home"
                         keywords={[`gatsby`, `application`, `react`]}
                 />
+                <Link to="/products/">
+                        <h1>Products Page</h1>
+                </Link>
                 <Info />
                 <Link to="/images/">Images</Link>
                 <h1 className={cls.Title}>Hi people</h1>
